@@ -17,6 +17,7 @@ class BeetleBug {
     yThree = tempYThree;  
     diameter = tempDiameter;
   }
+  
   void move() {  
     x += random(-speed, speed); 
     y += random(-speed, speed);
@@ -28,5 +29,8 @@ class BeetleBug {
   }
   void display() { 
     triangle(x, y, xTwo, yTwo, xThree, yThree);
+  }
+  void setColor() {
+    fill(random(225), random(225), random(225));
   }
 }
